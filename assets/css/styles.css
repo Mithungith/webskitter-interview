@@ -4,13 +4,16 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+:root{
+   --mainColor:#DCA827;
+}
 a{
     text-decoration: none!important;
 }
 
 /*==========================Navbar css start============================*/
 .nav-btn-span1{
-    background-color:#DCA827;
+    background-color:var(--mainColor);
     position: relative;
     display:inline-block;
     width:100px;
@@ -98,12 +101,12 @@ a{
     margin-top: -13px;
     }
 .main-heading h4:first-child{
-    color:#DCA827
+    color:var(--mainColor)
 } 
 
 #banner .nav-btn-span1 {
     color: #000;
-    background-color: #DCA827;
+    background-color: var(--mainColor);
     position: relative;
     display: inline-block;
     width: 125px;
@@ -128,10 +131,15 @@ a{
     width: 100px;
     height: 100px;
 }
-.Certified-innerCircle{
-  border-radius: 50%;
-  border: 1px dashed grey;
-  padding: 10px;
+.Certified-innerCircle {
+    border-radius: 50%;
+    border: 1px dashed grey;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Certified-outerCircle-parent{
     display:flex;
@@ -144,6 +152,89 @@ a{
     color:#000;
 }
 /*==========================Certified css end============================*/
+/*==========================Research css start============================*/
+#research{
+    
+}
+.main-btn-again {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    color: var(--mainColor);
+    background-color: var(--mainColor);
+    position: relative;
+    color: #fff;
+    padding: 13px;
+}
+.main-btn-again .main-btn-again-inner {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding-top: 3px;
+}
+.reseacrc-main-img{
+    position: relative;
+}
+.reseacrc-main-img img{
+    width:100%;
+    object-fit: cover;
+}
+.reseacrc-main-img-date{
+    width:60px;
+    height:60px;
+    text-align: center;
+    color:#000;
+    background-color: var(--mainColor);
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reseacrc-main-img-date span{
+    display: block;
+    margin-bottom: -3px!important;
+    color:#fff;
+}
+.reseacrc-main-img-date span:first-child{
+    font-size: 20px;
+}
+.resecach-sm-box {
+    width: 40px;
+    height: 40px;
+    padding: 1px 8px;
+    border: 2px solid #000;
+    font-size: 24px;
+}
+.research-sideBar{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+.research-sideBar-sm-img{
+    position: relative;
+}
+.research-sideBar-sm-img-date{
+    width:60px;
+    height:60px;
+    text-align: center;
+    color:#fff;
+    background-color: var(--mainColor);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*==========================Research css end============================*/
 /*==========================Newsletter start============================*/
 #newsletter{
     position:relative;
@@ -179,7 +270,7 @@ a{
     padding-left: 10px;
 }
 .newsletter-btn {
-    background-color: #DCA827;
+    background-color: var(--mainColor);
     color: #000;
     display: inline-block;
     left: -4px;
@@ -198,7 +289,7 @@ a{
     background-color: #151515;
 }
 #footer h3{
-    color: #DCA827;
+    color: var(--mainColor);
     font-weight: 400;
     font-size: 23px;
     margin-bottom:1rem;
@@ -269,7 +360,7 @@ flex-shrink: 0; */
 }
 .forth-col-footer ul{
    display: flex;
-   color: #DCA827;
+   color: var(--mainColor);
 }
 .forth-col-footer p{
     color: #fff;
@@ -278,7 +369,7 @@ flex-shrink: 0; */
  .forth-col-footer ul li i{
     font-size: 26px;
     padding-right: 1rem;
-    color:#DCA827;
+    color:var(--mainColor);
     transition: all linear 200ms;
  }
  .forth-col-footer ul li i:hover{
